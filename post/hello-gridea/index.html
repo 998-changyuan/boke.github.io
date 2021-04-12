@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>vue学习 | Gridea</title>
+<link rel="shortcut icon" href="https://github.com/998-changyuan/boke.github.io./favicon.ico?v=1618203428848">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://github.com/998-changyuan/boke.github.io./styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="vue学习 | Gridea - Atom Feed" href="https://github.com/998-changyuan/boke.github.io./atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="vue v-text和v-html的区别：
+v-text 适用于插入文本而v-html适用插入标签。
+v-if和 v-show的区别：
+使用v-if会把不表示的东西删除掉一般是手机应用类的界面。
+使用v-show不会把不表示的东西删除掉即改..." />
+    <meta name="keywords" content="vue学习" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://github.com/998-changyuan/boke.github.io.">
+  <img class="avatar" src="https://github.com/998-changyuan/boke.github.io./images/avatar.png?v=1618203428848" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              vue学习
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-04-04
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://github.com/998-changyuan/boke.github.io./tag/4mw_v9jdj/" class="post-tag">
+                  # vue学习
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://github.com/998-changyuan/boke.github.io./post-images/hello-gridea.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>vue v-text和v-html的区别：<br>
+v-text 适用于插入文本而v-html适用插入标签。<br>
+v-if和 v-show的区别：<br>
+使用v-if会把不表示的东西删除掉一般是手机应用类的界面。<br>
+使用v-show不会把不表示的东西删除掉即改变样式网络链接类的界面<br>
+两者区别:<img src="https://github.com/998-changyuan/boke.github.io./post-images/1617973020133.png" alt="" loading="lazy">。<br>
+v-blind可以绑定链接等如<a v-blind:herf="http//:www.baidu.com"> {{name}}<a/>也可以简写成<a :herf="http//:www.baidu.com"> {{name}}<a/>还可以动态切换css的值如<img src="https://github.com/998-changyuan/boke.github.io./post-images/1618020534708.png" alt="" loading="lazy"><br>
+v-on：事件可以简写成@：和v-blind一起使用可以切换背景色之类（切换效果），</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://github.com/998-changyuan/boke.github.io./atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
