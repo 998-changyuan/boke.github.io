@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://github.com/998-changyuan/boke.github.io</id>
+    <id>https://boke.github.io</id>
     <title>Gridea</title>
-    <updated>2021-04-12T05:02:45.034Z</updated>
+    <updated>2021-04-12T05:10:14.368Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://github.com/998-changyuan/boke.github.io"/>
-    <link rel="self" href="https://github.com/998-changyuan/boke.github.io/atom.xml"/>
+    <link rel="alternate" href="https://boke.github.io"/>
+    <link rel="self" href="https://boke.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://github.com/998-changyuan/boke.github.io/images/avatar.png</logo>
-    <icon>https://github.com/998-changyuan/boke.github.io/favicon.ico</icon>
+    <logo>https://boke.github.io/images/avatar.png</logo>
+    <icon>https://boke.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[vue学习]]></title>
-        <id>https://github.com/998-changyuan/boke.github.io/post/hello-gridea/</id>
-        <link href="https://github.com/998-changyuan/boke.github.io/post/hello-gridea/">
+        <id>https://boke.github.io/post/hello-gridea/</id>
+        <link href="https://boke.github.io/post/hello-gridea/">
         </link>
         <updated>2021-04-03T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>vue v-text和v-html的区别：<br>
@@ -21,8 +21,8 @@ v-text 适用于插入文本而v-html适用插入标签。<br>
 v-if和 v-show的区别：<br>
 使用v-if会把不表示的东西删除掉一般是手机应用类的界面。<br>
 使用v-show不会把不表示的东西删除掉即改变样式网络链接类的界面<br>
-两者区别:<img src="https://github.com/998-changyuan/boke.github.io/post-images/1617973020133.png" alt="" loading="lazy">。<br>
-v-blind可以绑定链接等如<a v-blind:herf="http//:www.baidu.com"> {{name}}<a/>也可以简写成<a :herf="http//:www.baidu.com"> {{name}}<a/>还可以动态切换css的值如<img src="https://github.com/998-changyuan/boke.github.io/post-images/1618020534708.png" alt="" loading="lazy"><br>
+两者区别:<img src="https://boke.github.io/post-images/1617973020133.png" alt="" loading="lazy">。<br>
+v-blind可以绑定链接等如<a v-blind:herf="http//:www.baidu.com"> {{name}}<a/>也可以简写成<a :herf="http//:www.baidu.com"> {{name}}<a/>还可以动态切换css的值如<img src="https://boke.github.io/post-images/1618020534708.png" alt="" loading="lazy"><br>
 v-on：事件可以简写成@：和v-blind一起使用可以切换背景色之类（切换效果），</p>
 ]]></content>
     </entry>
